@@ -1,0 +1,83 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+* {box-sizing:border-box}
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 30px;
+    margin: auto;
+  }
+
+.text{
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    text-align: center;
+    font-weight: 100;
+  }
+  
+  p{
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'poppins', sans-serif;
+    padding-bottom: 20px;
+    
+  }
+
+/*-------Footer styling-------*/
+.outer_footer {
+    display: block;
+    overflow: hidden;
+    padding-top: 70px;
+    box-sizing: border-box; 
+    background-color: black;
+  }
+  
+  .inner_footer {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .inner_footer .footer_third h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: rgb(0,133,186);
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .inner_footer img{
+   height: 70px;
+   }
+
+  .inner_footer .footer_third a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: white;
+    font-weight: 200;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  }
+
+  /*-------Footer slut-------*/

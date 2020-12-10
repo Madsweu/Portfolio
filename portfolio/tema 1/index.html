@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projektside</title>
+        <link rel="stylesheet" href="style.css">
+        <script> var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          // Next/previous controls
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          // Thumbnail image controls
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+          }
+    </script>
+    </head>
+    <body>
+    <h1>Tema 1.1: Rumrejsen</h1>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="logo.png" alt="logo" style="width:100%">
+      <div class="text">Logo</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="flowdiagram.png" alt="flow" style="width:100%">
+      <div class="text">Flowchart, opbygningen af vores website</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="Sketching.png" alt="sketch" style="width:100%">
+      <div class="text">Sketching af logo</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+    <div class="column">
+        
+    </div>    
+    <div class="row">
+    <div class="column">
+              <p>Beskrivlese af opgaven:
+                <br>
+                <br>
+                Projektet beskæftiger sig med design, programmering og produktion af enkle digitale indholdsløsninger til udvalgte medieplatforme. I fagelementet fokuseres på produktion af enkelt indhold til medieplatforme. 
+                Tema 1.1 Rumrejsen var det første projekt på multimediedesigner uddannelsen. Min gruppe og jeg fik til opgave at konceptudvikle et fiktivt rumrejseprogram. 
+                Produktet blev til en salgsplatform, et website som skulle give kunderne mulighed for at bestille en rejse ud i rummet. 
+                <br>
+                <br>
+                Produktkrav/indhold på websitet:
+                <br>
+                <br>
+                Produktet krævede en konceptbeskrivelse, dvs. en pitch om vores koncept. Sketches som skulle give et visuelt billede af de forskellige undersider. Et billede med blikfang produceret i photoshop og et valideret website kodet i HTML og CSS, samt andet relevant indhold.  
+                <br>
+                <br>
+                Løsningen til Projektet:
+                <br>
+                <br>
+                Vi startede med idegenerering og blev efterfølgende teamet Climars. Vi bestod af 5 ambitiøse mennesker som gerne ville starte et program for mennesker med store ambitioner. Ideen handler om at skabe et innovativit og bæredygtigt samfund, hvor ressourcer genbruges i et lukket kredsløb. Vi vil forvanlde mars til en ny sivilisation, og undgå de massive klimaforandringer på jorden. I samarbejde med Gretha Thunberg som er vores projektkoordinator og Elon Musk som skal bygge vores elraket, skal vi sammen til mars via. grøn transport. Træt af jorden? start forfra med Climars.    
+                <br>
+                I projektet stod jeg for at kode en side som skulle give, et visuelt billede af de forudsætninger vi krævede fra kunderne. Da det var vigtigt at præcisere overfor kunderne, hvad de går indtil. Derudover var jeg også med til brainstorme ideer og sketche forskellige elementer på vores website.  
+                <br>
+                <br>
+                Bemærk:
+                <br>
+                Projekter/opgaver som laves på 1. og 2. semester vil gennem uddannelsen tidslinje, blive udskiftet til nyere projekter som er mere profesionelle og gennemarbejdet. 
+              </p>
+
+        </div>
+        </div>
+        
+
+
+<!-- footer section start -->
+<footer class="outer_footer">
+    <div class="inner_footer">
+    
+        <div class="footer_third">
+            <h2>Kontaktoplysniger</h2>
+            <a href="#">E-mail:<br>madsmab@gmail.com</a>
+            <a href="#">Telefon:<br>20102690</a>
+            <a href="#">Højvangen 87<br>2690 Karlslunde</a>
+            <h2>Sociale medier</h2> 
+            <a href="https://www.facebook.com/madsmab/"><img src="facebook_ny.jpeg" alt="fb"></a>
+            <a href="https://www.instagram.com/m_austmann/"><img src="instagram_ny.jpeg" alt="ig"></a> 
+        </div>
+    </div>
+</footer>
+<!-- footer slutning -->   
+    </body>
+
+</html>

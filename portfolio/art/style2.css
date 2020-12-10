@@ -1,0 +1,129 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 100px 0;
+    background-color: black;
+}
+.about, .services, .skills, .teams, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content {
+    display: inline-block;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(0, 133, 186);
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background:white;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: #77b6ea;
+    padding: 0 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+
+/* about section styling */
+.about .title::after{
+    content: "TB-Grafisk";
+}
+
+.about .about-content .right{
+    width: 60%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 992px) {
+    .max-width{
+        max-width: 1300px;
+        padding: 0 80px;
+        margin: auto;
+    }
+  }
+  .max-width{
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+  
+.about .about-content .right a{
+    display: inline-block;
+    background: rgb(0, 133, 186);
+    color: #e8eef2;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #e8eef2;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: rgb(0, 133, 186);
+    background: none;
+}
+
+.gallery {
+    margin: auto;
+}
+
+.gallery img {
+    width: 300px;
+    max-width: 295px;
+    max-height: 224px;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+
+}
+
+.gallery img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+    
+}
+
+p {
+    color: white;
+    
+}
+
+  
+ 
