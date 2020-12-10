@@ -19,14 +19,18 @@
     margin: auto;
   }
 
+/* Position af tekst */
+
 .text{
     color: black;
     font-family: 'Ubuntu', sans-serif;
     position: relative;
     text-align: center;
-    font-weight: 100;
+    font-weight: 70px;
   }
-  
+
+/* Styling af tekst */
+
   p{
     display: block;
     font-size: 15px;
@@ -36,7 +40,7 @@
     
   }
 
-/*-------Footer styling-------*/
+/* Footer styling */
 .outer_footer {
     display: block;
     overflow: hidden;
@@ -70,7 +74,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: white;
-    font-weight: 200;
+    font-weight: 200px;
     display: block;
     width: 100%;
     margin-bottom: 20px;
@@ -80,4 +84,4 @@
     color: white;
   }
 
-  /*-------Footer slut-------*/
+  /* Footer slut */

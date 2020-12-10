@@ -14,7 +14,7 @@ html{
 /* custom scroll bar */
 
 
-/* all similar content styling codes */
+/* Alt ens content styles */
 section{
     padding: 100px 0;
 }
@@ -248,6 +248,7 @@ section .title::after{
     padding: 25px 35px;
     text-align: center;
     overflow: hidden;
+    margin: 30px;
     transition: all 0.3s ease;
 }
 
@@ -308,7 +309,10 @@ section .title::after{
 .kontakt .kontakt-content .row .info{
     margin-left: 30px;
 }
-
+.kontakt .kontakt-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
 .kontakt .kontakt-content .info .head{
     font-weight: 500;
 }
@@ -504,7 +508,10 @@ section .title::after{
         line-height: 38px;
     }
 }
-/*-------Footer styling-------*/
+
+/* media quries slut */
+
+/* Footer styling */
 .outer_footer {
     display: block;
     overflow: hidden;
@@ -547,7 +554,7 @@ section .title::after{
     text-decoration: none;
   }
 
-  /*-------Footer slut-------*/
+  /* Footer slut */
   
  
    

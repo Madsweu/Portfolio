@@ -11,11 +11,13 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Overskrift/sektion styling */
+
 section{
     padding: 100px 0;
     background-color: black;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .skills, .produkter, .kontakt footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content {
@@ -56,7 +58,7 @@ section .title::after{
 }
 
 
-/* about section styling */
+/* tekst sektion styling */
 .about .title::after{
     content: "TB-Grafisk";
 }
@@ -100,6 +102,8 @@ section .title::after{
     background: none;
 }
 
+/* galleri styling af billeder */
+
 .gallery {
     margin: auto;
 }
@@ -124,6 +128,3 @@ p {
     color: white;
     
 }
-
-  
- 
