@@ -6,51 +6,19 @@
         <title>Projektside</title>
         <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="menu.js"></script>
-        <script> var slideIndex = 1;
-          showSlides(slideIndex);
-          
-          // Frem og tilbage
-          function plusSlides(n) {
-            showSlides(slideIndex += n);
-          }
-          
-          // Billede controls
-          function currentSlide(n) {
-            showSlides(slideIndex = n);
-          }
-          
-          function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-          }
-    </script>
     </head>
     <body>
       
-      <nav>
-        <h1>Tema 1.1: Rumrejsen</h1>
-        <!--Navigation burger-->
-      <div id="burger" class="burger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-          <li><a href="http://multidesigner.dk/1.semester.eksamen/">Hjem</a></li>
-          <li><a href="http://multidesigner.dk/Rumrejsen-climars/index-forside.html">produktet</a></li>
-      </nav>
 
+      <header class="header">
+        <a href="" class="logo">Tema 1.1: Rumrejsen</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="http://multidesigner.dk/1.semester.eksamen">Hjem</a></li>
+          <li><a href="http://multidesigner.dk/Rumrejsen-climars/index-forside.html">produktet</a></li>
+        </ul>
+      </header>
 
     <!-- Slideshow container -->
 <div class="slideshow-container">
@@ -86,8 +54,6 @@
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
-    <div class="column">
-    </div> 
     
     <!-- Beskrivelse, krav og løsning i teskt -->
     
@@ -140,7 +106,37 @@
         </div>
     </div>
 </footer>
-<!-- footer slutning -->   
+<!-- footer slutning -->
+<script src="menu.js"></script>
+<script> var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  // Frem og tilbage
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  // Billede controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>   
     </body>
 
 </html>
